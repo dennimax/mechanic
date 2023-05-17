@@ -321,7 +321,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item1Counter++;
     item1Amount.innerHTML = item1Counter;
-    updateTotal(2.1);
+    updateTotal(1990);
     Storage.setAmount("item1", item1Counter);
   });
 
@@ -334,7 +334,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item2Counter++;
     item2Amount.innerHTML = item2Counter;
-    updateTotal(2.6);
+    updateTotal(4260);
     Storage.setAmount("item2", item2Counter);
   });
 
@@ -347,7 +347,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item3Counter++;
     item3Amount.innerHTML = item3Counter;
-    updateTotal(2.79);
+    updateTotal(2560);
     Storage.setAmount("item3", item3Counter);
   });
 
@@ -360,7 +360,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item4Counter++;
     item4Amount.innerHTML = item4Counter;
-    updateTotal(2.05);
+    updateTotal(2590);
     Storage.setAmount("item4", item4Counter);
   });
 
@@ -373,7 +373,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item5Counter++;
     item5Amount.innerHTML = item5Counter;
-    updateTotal(2.2);
+    updateTotal(2400);
     Storage.setAmount("item5", item5Counter);
   });
 
@@ -386,7 +386,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item6Counter++;
     item6Amount.innerHTML = item6Counter;
-    updateTotal(2.8);
+    updateTotal(12280);
     Storage.setAmount("item6", item6Counter);
   });
 
@@ -399,7 +399,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item7Counter++;
     item7Amount.innerHTML = item7Counter;
-    updateTotal(2.25);
+    updateTotal(2600);
     Storage.setAmount("item7", item7Counter);
   });
 
@@ -412,7 +412,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item8Counter++;
     item8Amount.innerHTML = item8Counter;
-    updateTotal(2.59);
+    updateTotal(2599);
     Storage.setAmount("item8", item8Counter);
   });
 
@@ -425,7 +425,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item9Counter++;
     item9Amount.innerHTML = item9Counter;
-    updateTotal(2.34);
+    updateTotal(2598);
     Storage.setAmount("item9", item9Counter);
   });
 
@@ -438,7 +438,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item10Counter++;
     item10Amount.innerHTML = item10Counter;
-    updateTotal(2.89);
+    updateTotal(3000);
     Storage.setAmount("item10", item10Counter);
   });
 
@@ -451,7 +451,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item11Counter++;
     item11Amount.innerHTML = item11Counter;
-    updateTotal(2.18);
+    updateTotal(12000);
     Storage.setAmount("item11", item11Counter);
   });
 
@@ -464,7 +464,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item12Counter++;
     item12Amount.innerHTML = item12Counter;
-    updateTotal(2.75);
+    updateTotal(200);
     Storage.setAmount("item12", item12Counter);
   });
 }
@@ -581,7 +581,7 @@ function initializeItem1() {
   down1.addEventListener("click", function () {
     item1Counter--;
     item1Amount.innerHTML = item1Counter;
-    updateTotal(-2.1);
+    updateTotal(-1990);
     Storage.setAmount("item1", item1Counter);
 
     if (item1Counter === 0) {
@@ -592,7 +592,7 @@ function initializeItem1() {
 
   remove1.addEventListener("click", function () {
     item1Display.innerHTML = "";
-    updateTotal(-2.1 * item1Counter);
+    updateTotal(-1990 * item1Counter);
     item1Counter = 0;
     Storage.removeAmount("item1");
   });
@@ -628,14 +628,14 @@ function initializeItem2() {
   up2.addEventListener("click", function () {
     item2Counter++;
     item2Amount.innerHTML = item2Counter;
-    updateTotal(2.6);
+    updateTotal(4260);
     Storage.setAmount("item2", item2Counter);
   });
 
   down2.addEventListener("click", function () {
     item2Counter--;
     item2Amount.innerHTML = item2Counter;
-    updateTotal(-2.6);
+    updateTotal(-4260);
     Storage.setAmount("item2", item2Counter);
 
     if (item2Counter === 0) {
@@ -646,7 +646,7 @@ function initializeItem2() {
 
   remove2.addEventListener("click", function () {
     item2Display.innerHTML = "";
-    updateTotal(-2.6 * item2Counter);
+    updateTotal(-4260 * item2Counter);
     item2Counter = 0;
     Storage.removeAmount("item2");
   });
@@ -660,8 +660,8 @@ function initializeItem3() {
   item3Display.innerHTML += `<div class="three3-cart-item">
   <img src="img/caffe-americano.jpg" alt="product" />
     <div>
-      <h3><span class="span-primary">Spanner </span> Box-Set</h3>
-      <h4>KSh 1990</h4>
+      <h3><span class="span-primary">Ball </span> Bearings</h3>
+      <h4>KSh 2560</h4>
       <span class="remove-item-3">Remove</span>
     </div>
     <div>
@@ -682,14 +682,14 @@ function initializeItem3() {
   up3.addEventListener("click", function () {
     item3Counter++;
     item3Amount.innerHTML = item3Counter;
-    updateTotal(2.79);
+    updateTotal(2560);
     Storage.setAmount("item3", item3Counter);
   });
 
   down3.addEventListener("click", function () {
     item3Counter--;
     item3Amount.innerHTML = item3Counter;
-    updateTotal(-2.79);
+    updateTotal(-2560);
     Storage.setAmount("item3", item3Counter);
 
     if (item3Counter === 0) {
@@ -700,7 +700,7 @@ function initializeItem3() {
 
   remove3.addEventListener("click", function () {
     item3Display.innerHTML = "";
-    updateTotal(-2.79 * item3Counter);
+    updateTotal(-2560 * item3Counter);
     item3Counter = 0;
     Storage.removeAmount("item3");
   });
@@ -736,14 +736,14 @@ function initializeItem4() {
   up4.addEventListener("click", function () {
     item4Counter++;
     item4Amount.innerHTML = item4Counter;
-    updateTotal(2.05);
+    updateTotal(2590);
     Storage.setAmount("item4", item4Counter);
   });
 
   down4.addEventListener("click", function () {
     item4Counter--;
     item4Amount.innerHTML = item4Counter;
-    updateTotal(-2.05);
+    updateTotal(-2590);
     Storage.setAmount("item4", item4Counter);
 
     if (item4Counter === 0) {
@@ -754,7 +754,7 @@ function initializeItem4() {
 
   remove4.addEventListener("click", function () {
     item4Display.innerHTML = "";
-    updateTotal(-2.05 * item4Counter);
+    updateTotal(-2590 * item4Counter);
     item4Counter = 0;
     Storage.removeAmount("item4");
   });
@@ -790,14 +790,14 @@ function initializeItem5() {
   up5.addEventListener("click", function () {
     item5Counter++;
     item5Amount.innerHTML = item5Counter;
-    updateTotal(2.2);
+    updateTotal(2400);
     Storage.setAmount("item5", item5Counter);
   });
 
   down5.addEventListener("click", function () {
     item5Counter--;
     item5Amount.innerHTML = item5Counter;
-    updateTotal(-2.2);
+    updateTotal(-2400);
     Storage.setAmount("item5", item5Counter);
 
     if (item5Counter === 0) {
@@ -808,7 +808,7 @@ function initializeItem5() {
 
   remove5.addEventListener("click", function () {
     item5Display.innerHTML = "";
-    updateTotal(-2.2 * item5Counter);
+    updateTotal(-2400 * item5Counter);
     item5Counter = 0;
     Storage.removeAmount("item5");
   });
@@ -844,14 +844,14 @@ function initializeItem6() {
   up6.addEventListener("click", function () {
     item6Counter++;
     item6Amount.innerHTML = item6Counter;
-    updateTotal(2.8);
+    updateTotal(12280);
     Storage.setAmount("item6", item6Counter);
   });
 
   down6.addEventListener("click", function () {
     item6Counter--;
     item6Amount.innerHTML = item6Counter;
-    updateTotal(-2.8);
+    updateTotal(-12280);
     Storage.setAmount("item6", item6Counter);
 
     if (item6Counter === 0) {
@@ -862,7 +862,7 @@ function initializeItem6() {
 
   remove6.addEventListener("click", function () {
     item6Display.innerHTML = "";
-    updateTotal(-2.8 * item6Counter);
+    updateTotal(-12280 * item6Counter);
     item6Counter = 0;
     Storage.removeAmount("item6");
   });
@@ -898,14 +898,14 @@ function initializeItem7() {
   up7.addEventListener("click", function () {
     item7Counter++;
     item7Amount.innerHTML = item7Counter;
-    updateTotal(2.25);
+    updateTotal(2600);
     Storage.setAmount("item7", item7Counter);
   });
 
   down7.addEventListener("click", function () {
     item7Counter--;
     item7Amount.innerHTML = item7Counter;
-    updateTotal(-2.25);
+    updateTotal(-2600);
     Storage.setAmount("item7", item7Counter);
 
     if (item7Counter === 0) {
@@ -916,7 +916,7 @@ function initializeItem7() {
 
   remove7.addEventListener("click", function () {
     item7Display.innerHTML = "";
-    updateTotal(-2.25 * item7Counter);
+    updateTotal(-2600 * item7Counter);
     item7Counter = 0;
     Storage.removeAmount("item7");
   });
@@ -952,14 +952,14 @@ function initializeItem8() {
   up8.addEventListener("click", function () {
     item8Counter++;
     item8Amount.innerHTML = item8Counter;
-    updateTotal(2.59);
+    updateTotal(2599);
     Storage.setAmount("item8", item8Counter);
   });
 
   down8.addEventListener("click", function () {
     item8Counter--;
     item8Amount.innerHTML = item8Counter;
-    updateTotal(-2.59);
+    updateTotal(-2599);
     Storage.setAmount("item8", item8Counter);
 
     if (item8Counter === 0) {
@@ -970,7 +970,7 @@ function initializeItem8() {
 
   remove8.addEventListener("click", function () {
     item8Display.innerHTML = "";
-    updateTotal(-2.59 * item8Counter);
+    updateTotal(-2599 * item8Counter);
     item8Counter = 0;
     Storage.removeAmount("item8");
   });
@@ -1006,14 +1006,14 @@ function initializeItem9() {
   up9.addEventListener("click", function () {
     item9Counter++;
     item9Amount.innerHTML = item9Counter;
-    updateTotal(2.34);
+    updateTotal(2598);
     Storage.setAmount("item9", item9Counter);
   });
 
   down9.addEventListener("click", function () {
     item9Counter--;
     item9Amount.innerHTML = item9Counter;
-    updateTotal(-2.34);
+    updateTotal(-2598);
     Storage.setAmount("item9", item9Counter);
 
     if (item9Counter === 0) {
@@ -1024,7 +1024,7 @@ function initializeItem9() {
 
   remove9.addEventListener("click", function () {
     item9Display.innerHTML = "";
-    updateTotal(-2.34 * item9Counter);
+    updateTotal(-2598 * item9Counter);
     item9Counter = 0;
     Storage.removeAmount("item9");
   });
@@ -1060,14 +1060,14 @@ function initializeItem10() {
   up10.addEventListener("click", function () {
     item10Counter++;
     item10Amount.innerHTML = item10Counter;
-    updateTotal(2.89);
+    updateTotal(3000);
     Storage.setAmount("item10", item10Counter);
   });
 
   down10.addEventListener("click", function () {
     item10Counter--;
     item10Amount.innerHTML = item10Counter;
-    updateTotal(-2.89);
+    updateTotal(-3000);
     Storage.setAmount("item10", item10Counter);
 
     if (item10Counter === 0) {
@@ -1078,7 +1078,7 @@ function initializeItem10() {
 
   remove10.addEventListener("click", function () {
     item10Display.innerHTML = "";
-    updateTotal(-2.89 * item10Counter);
+    updateTotal(-3000 * item10Counter);
     item10Counter = 0;
     Storage.removeAmount("item10");
   });
@@ -1114,14 +1114,14 @@ function initializeItem11() {
   up11.addEventListener("click", function () {
     item11Counter++;
     item11Amount.innerHTML = item11Counter;
-    updateTotal(2.18);
+    updateTotal(12000);
     Storage.setAmount("item11", item11Counter);
   });
 
   down11.addEventListener("click", function () {
     item11Counter--;
     item11Amount.innerHTML = item11Counter;
-    updateTotal(-2.18);
+    updateTotal(-12000);
     Storage.setAmount("item11", item11Counter);
 
     if (item11Counter === 0) {
@@ -1132,7 +1132,7 @@ function initializeItem11() {
 
   remove11.addEventListener("click", function () {
     item11Display.innerHTML = "";
-    updateTotal(-2.18 * item11Counter);
+    updateTotal(-12000 * item11Counter);
     item11Counter = 0;
     Storage.removeAmount("item11");
   });
@@ -1168,14 +1168,14 @@ function initializeItem12() {
   up12.addEventListener("click", function () {
     item12Counter++;
     item12Amount.innerHTML = item12Counter;
-    updateTotal(2.75);
+    updateTotal(200);
     Storage.setAmount("item12", item12Counter);
   });
 
   down12.addEventListener("click", function () {
     item12Counter--;
     item12Amount.innerHTML = item12Counter;
-    updateTotal(-2.75);
+    updateTotal(-200);
     Storage.setAmount("item12", item12Counter);
 
     if (item12Counter === 0) {
@@ -1186,7 +1186,7 @@ function initializeItem12() {
 
   remove12.addEventListener("click", function () {
     item12Display.innerHTML = "";
-    updateTotal(-2.75 * item12Counter);
+    updateTotal(-200 * item12Counter);
     item12Counter = 0;
     Storage.removeAmount("item12");
   });
